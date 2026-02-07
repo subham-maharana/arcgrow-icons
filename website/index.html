@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arcgrow Icons - Modern Icon Library</title>
+    <meta name="description" content="Open-source icon library with automatic publishing from Figma to NPM">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>🎨 Arcgrow Icons</h1>
+                    <p class="tagline">Modern icon library from Figma to NPM</p>
+                </div>
+                <div class="header-actions">
+                    <a href="https://www.npmjs.com/package/@arcgrow/icons" class="btn btn-secondary" target="_blank">
+                        📦 NPM Package
+                    </a>
+                    <a href="https://github.com/your-username/arcgrow-icons" class="btn btn-primary" target="_blank">
+                        ⭐ GitHub
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Search & Filters -->
+    <section class="search-section">
+        <div class="container">
+            <div class="search-bar">
+                <input type="text" id="search" placeholder="🔍 Search icons..." />
+            </div>
+            <div class="filters">
+                <div class="filter-group">
+                    <label>Category:</label>
+                    <select id="category-filter">
+                        <option value="all">All Categories</option>
+                    </select>
+                </div>
+                <div class="stats">
+                    <span id="icon-count">0 icons</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Icon Grid -->
+    <section class="icons-section">
+        <div class="container">
+            <div id="icon-grid" class="icon-grid">
+                <div class="loading">Loading icons...</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Icon Modal -->
+    <div id="icon-modal" class="modal" style="display: none;">
+        <div class="modal-overlay" onclick="closeModal()"></div>
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal()">×</button>
+            <div class="modal-header">
+                <div id="modal-icon-preview"></div>
+                <h2 id="modal-icon-name"></h2>
+            </div>
+            <div class="modal-body">
+                <div class="code-section">
+                    <h3>React</h3>
+                    <pre><code id="react-code"></code></pre>
+                    <button class="copy-btn" onclick="copyCode('react')">Copy</button>
+                </div>
+                <div class="code-section">
+                    <h3>Vue</h3>
+                    <pre><code id="vue-code"></code></pre>
+                    <button class="copy-btn" onclick="copyCode('vue')">Copy</button>
+                </div>
+                <div class="code-section">
+                    <h3>SVG</h3>
+                    <pre><code id="svg-code"></code></pre>
+                    <button class="copy-btn" onclick="copyCode('svg')">Copy</button>
+                </div>
+                <div class="download-section">
+                    <button class="btn btn-primary" onclick="downloadIcon()">
+                        ⬇️ Download SVG
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>Made with ❤️ by Arcgrow | <a href="https://github.com/your-username/arcgrow-icons/blob/main/LICENSE">MIT
+                    License</a></p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

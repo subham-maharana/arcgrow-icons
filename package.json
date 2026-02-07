@@ -1,0 +1,50 @@
+{
+    "name": "@subham-maharana/icons",
+    "version": "1.0.0",
+    "description": "Modern icon library with automatic publishing from Figma",
+    "main": "dist/index.js",
+    "module": "dist/index.esm.js",
+    "types": "dist/index.d.ts",
+    "files": [
+        "dist",
+        "svg",
+        "react",
+        "vue"
+    ],
+    "scripts": {
+        "build": "node build/generate-package.js"
+    },
+    "keywords": [
+        "icons",
+        "svg",
+        "react",
+        "vue",
+        "figma",
+        "arcgrow"
+    ],
+    "author": "Arcgrow",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/subham-maharana/arcgrow-icons.git"
+    },
+    "bugs": {
+        "url": "https://github.com/subham-maharana/arcgrow-icons/issues"
+    },
+    "homepage": "https://subham-maharana.github.io/arcgrow-icons",
+    "devDependencies": {
+        "svgo": "^3.0.0"
+    },
+    "peerDependencies": {
+        "react": ">=16.0.0",
+        "vue": ">=3.0.0"
+    },
+    "peerDependenciesMeta": {
+        "react": {
+            "optional": true
+        },
+        "vue": {
+            "optional": true
+        }
+    }
+}
